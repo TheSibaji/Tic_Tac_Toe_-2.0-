@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #5b844db2;
+    text-align: center;
+}
+
+h1{
+    margin: 2vmin auto;
+}
+
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2vmin;
+}
+
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border: none;
+    border-radius: 10%;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.4);
+    font-size: 10vmin;
+    color: rgb(244, 66, 66);
+    background-color: #cce8ef;
+}
+
+#reset-btn, #new-game{
+    background-color: #cce8ef;
+    height: auto;
+    width: auto;
+    border: none;
+    border-radius: 1rem;
+    padding: 1vmin 2vmin;
+    font-weight: bolder;
+}
+
+#msg{
+    color: floralwhite;
+    font-size: 5vmin;
+    padding: 1vmin 0;
+}
+
+.msg-container{
+    height: 15vmin;
+}
+
+.hide{
+    display: none;
+}
+
+
+/* phones */
+@media only screen and (max-width: 600px) {
+    body{
+        margin-top: 2rem;
+    }
+
+    .container {
+        margin: 2rem 0;
+        height: auto;
+        width: auto;
+    }
+
+    h1 {
+        font-size: 4vh;
+    }
+
+    .game {
+        height: 80vmin;
+        width: 80vmin;
+    }
+
+    .box {
+        height: 25vmin;
+        width: 25vmin;
+        font-size: 6vmin;
+    }
+
+    .msg-container {
+        height: 30vmin;
+        margin: 1rem 0 2rem 0;
+    }
+
+    #reset-btn,
+    #new-game {
+        padding: 1vmin 3vmin;
+        font-size: 2.5vh;
+    }
+
+    #msg {
+        font-size: 2.5vh;
+        margin: 2rem 0;
+    }
+
+    
+}
